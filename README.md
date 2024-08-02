@@ -10,7 +10,6 @@
 - **Funciones Avanzadas:** Incluye funcionalidades como raíces cuadradas y exponentes para cálculos más complejos.
 - **Interfaz Amigable:** Diseño simple y funcional que permite un uso intuitivo y rápido.
 - **Historial de Cálculos:** Guarda y muestra los cálculos recientes para una referencia rápida y conveniente.
-- **Versatilidad:** Ideal para estudiantes, profesionales y cualquier persona que necesite una calculadora confiable para uso diario.
 
 ## Tecnologías Utilizadas
 
