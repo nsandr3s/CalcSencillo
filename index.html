@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CalcSencillo: Calculadora web para realizar cálculos básicos y avanzados.">
+    <meta name="author" content="nsandr3s">
+    <title>CalcSencillo - Calculadora Web</title>
+    <!-- Enlace al archivo CSS para los estilos -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- Contenedor principal de la calculadora -->
+    <div class="calculadora">
+        <!-- Título de la calculadora -->
+        <h1>CalcSencillo</h1>
+
+        <!-- Área de visualización de la calculadora -->
+        <div class="display">
+            <!-- Campo de texto para mostrar los cálculos y resultados. Está deshabilitado para entrada manual -->
+            <input type="text" id="pantalla" disabled aria-label="Pantalla de cálculo">
+        </div>
+
+        <!-- Contenedor de los botones de la calculadora -->
+        <div class="botones">
+            <!-- Botón para borrar la pantalla de la calculadora -->
+            <button class="btn" onclick="borrarPantalla()" aria-label="Borrar pantalla">C</button>
+            <!-- Botones para las operaciones matemáticas básicas -->
+            <button class="btn" onclick="añadirPantalla('/')" aria-label="División">/</button>
+            <button class="btn" onclick="añadirPantalla('*')" aria-label="Multiplicación">*</button>
+            <button class="btn" onclick="añadirPantalla('-')" aria-label="Resta">-</button>
+            <!-- Botones numéricos -->
+            <button class="btn" onclick="añadirPantalla('7')" aria-label="Número 7">7</button>
+            <button class="btn" onclick="añadirPantalla('8')" aria-label="Número 8">8</button>
+            <button class="btn" onclick="añadirPantalla('9')" aria-label="Número 9">9</button>
+            <button class="btn" onclick="añadirPantalla('+')" aria-label="Suma">+</button>
+            <button class="btn" onclick="añadirPantalla('4')" aria-label="Número 4">4</button>
+            <button class="btn" onclick="añadirPantalla('5')" aria-label="Número 5">5</button>
+            <button class="btn" onclick="añadirPantalla('6')" aria-label="Número 6">6</button>
+            <!-- Botón para el punto decimal -->
+            <button class="btn" onclick="añadirPantalla('.')" aria-label="Punto decimal">.</button>
+            <button class="btn" onclick="añadirPantalla('1')" aria-label="Número 1">1</button>
+            <button class="btn" onclick="añadirPantalla('2')" aria-label="Número 2">2</button>
+            <button class="btn" onclick="añadirPantalla('3')" aria-label="Número 3">3</button>
+            <!-- Botón para calcular el resultado de la expresión ingresada -->
+            <button class="btn" onclick="calcular()" aria-label="Calcular resultado">=</button>
+            <!-- Botón para el número 0 -->
+            <button class="btn" onclick="añadirPantalla('0')" aria-label="Número 0">0</button>
+            <!-- Botones para funciones matemáticas avanzadas -->
+            <button class="btn" onclick="añadirPantalla('√')" aria-label="Raíz cuadrada">√</button>
+            <button class="btn" onclick="añadirPantalla('^')" aria-label="Exponente">^</button>
+        </div>
+
+        <!-- Sección del historial de cálculos -->
+        <div class="historial">
+            <h2>Historial</h2>
+            <!-- Lista para mostrar el historial de cálculos realizados -->
+            <ul id="historial"></ul>
+            <!-- Botón para eliminar el historial de cálculos -->
+            <button class="btn" onclick="borrarHistorial()" aria-label="Eliminar historial">Eliminar Historial</button>
+        </div>
+    </div>
+    <!-- Enlace al archivo JavaScript que contiene la lógica de la calculadora -->
+    <script src="script.js"></script>
+</body>
+
+</html>

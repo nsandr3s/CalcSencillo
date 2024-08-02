@@ -1,0 +1,95 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    background-color: #f4f4f4; 
+    margin: 0; 
+}
+
+/* Estilos para el contenedor de la calculadora */
+.calculadora {
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+    padding: 20px;
+    width: 250px;
+}
+
+/* Estilos para el título de la calculadora */
+h1 {
+    font-size: 1.5em; 
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+/* Estilos para el contenedor de la pantalla de la calculadora */
+.display {
+    margin-bottom: 10px; /* Espacio debajo del contenedor */
+}
+
+/* Estilos para el campo de texto de la pantalla de la calculadora */
+#pantalla {
+    width: 100%; 
+    padding: 10px; 
+    font-size: 1.5em; 
+    text-align: right; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+}
+
+/* Estilos para el contenedor de los botones */
+.botones {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 5px; 
+}
+
+/* Estilos para los botones de la calculadora */
+.btn {
+    padding: 20px; 
+    font-size: 1.2em; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #f1f1f1; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+/* Estilos para los botones al pasar el ratón por encima */
+.btn:hover {
+    background-color: #ddd; 
+}
+
+/* Estilos para los botones al hacer clic */
+.btn:active {
+    background-color: #ccc; 
+}
+
+/* Estilos para el contenedor del historial */
+.historial {
+    margin-top: 20px; 
+}
+
+/* Estilos para el título del historial */
+.historial h2 {
+    font-size: 1.2em; 
+    margin-bottom: 10px; 
+    text-align: center; 
+}
+
+/* Estilos para la lista del historial */
+#historial {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+/* Estilos para los elementos de la lista del historial */
+#historial li {
+    padding: 5px; 
+    border-bottom: 1px solid #ddd; 
+}
